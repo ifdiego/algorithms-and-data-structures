@@ -10,8 +10,16 @@ different programming languages.
 - [Queue (abstract data type) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
 - [Stack - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
 - [Tree (abstract data type)Stack - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Tree_(abstract_data_type)))
-- [Binary tree](https://en.wikipedia.org/wiki/Binary_tree)
-- [Binary search tree](https://en.wikipedia.org/wiki/Binary_search_tree)
+- [Binary tree - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Binary_tree)
+- [Binary search tree - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Binary_search_tree)
+
+[LeetCode Profile](https://leetcode.com/u/ifdiego)
+
+#### The Last Algorithms Course You'll Need
+
+- [Frontend Masters](https://frontendmasters.com/courses/algorithms)
+- [Repository](https://github.com/ThePrimeagen/fem-algos)
+- [Slides](https://theprimeagen.github.io/fem-algos)
 
 #### Contributing
 
