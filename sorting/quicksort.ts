@@ -18,7 +18,7 @@ function rearrange(array: number[], start: number, end: number): number {
             pointer++;
         }
     }
-    swap(array, pointer, end);
+    swap_numbers(array, pointer, end);
     return pointer;
 }
 
