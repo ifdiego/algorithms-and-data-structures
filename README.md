@@ -1,4 +1,4 @@
-# fun
+# algorithms
 
 A repo containing some studies on algorithms and data structures in many
 different programming languages.
