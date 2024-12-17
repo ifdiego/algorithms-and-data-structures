@@ -5,13 +5,16 @@ different programming languages.
 
 #### References
 
-- [Linked list - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Linked_list)
+- [Binary search tree - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Binary_search_tree)
+- [Binary tree - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Binary_tree)
 - [Doubly Linked List - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Doubly_linked_list)
+- [Graph (abstract data type) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
+- [Hash table - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Hash_table)
+- [Linked list - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Linked_list)
 - [Queue (abstract data type) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+- [Red–black tree - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
 - [Stack - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
 - [Tree (abstract data type)Stack - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Tree_(abstract_data_type)))
-- [Binary tree - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Binary_tree)
-- [Binary search tree - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Binary_search_tree)
 
 [LeetCode Profile](https://leetcode.com/u/ifdiego)
 
