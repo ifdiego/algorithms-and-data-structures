@@ -14,7 +14,7 @@ different programming languages.
 - [Queue (abstract data type) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
 - [Red–black tree - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
 - [Stack - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
-- [Tree (abstract data type)Stack - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Tree_(abstract_data_type)))
+- [Tree (abstract data type) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Tree_(abstract_data_type)))
 
 [LeetCode Profile](https://leetcode.com/u/ifdiego)
 
