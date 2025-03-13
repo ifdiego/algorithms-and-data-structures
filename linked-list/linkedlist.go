@@ -10,12 +10,14 @@ type Node[T any] struct {
 type LinkedList[T any] struct {
 	Head   *Node[T]
 	Equals func(a, b T) bool
+	Size   int
 }
 
 func (l *LinkedList[T]) Append(value T) {
 	newNode := &Node[T]{Value: value}
 	if l.Head == nil {
 		l.Head = newNode
+		l.Size++
 		return
 	}
 
@@ -24,6 +26,13 @@ func (l *LinkedList[T]) Append(value T) {
 		current = current.Next
 	}
 	current.Next = newNode
+	l.Size++
+}
+
+func (l *LinkedList[T]) Prepend(value T) {
+	newNode := &Node[T]{Value: value, Next: l.Head}
+	l.Head = newNode
+	l.Size++
 }
 
 func (l *LinkedList[T]) Traverse() {
@@ -50,22 +59,38 @@ func (l *LinkedList[T]) Search(value T) *Node[T] {
 	return nil
 }
 
-func (l *LinkedList[T]) Delete(value T) {
-	if l.Head == nil || l.Equals == nil {
-		return
+func (l *LinkedList[T]) Pop() (T, bool) {
+	if l.Head == nil {
+		var zeroValue T
+		return zeroValue, false
 	}
 
-	if l.Equals(l.Head.Value, value) {
-		l.Head = l.Head.Next
-		return
+	if l.Head.Next == nil {
+		value := l.Head.Value
+		l.Head = nil
+		l.Size--
+		return value, true
 	}
 
 	current := l.Head
-	for current.Next != nil {
-		if l.Equals(current.Next.Value, value) {
-			current.Next = current.Next.Next
-			return
-		}
+	for current.Next.Next != nil {
 		current = current.Next
 	}
+
+	value := current.Next.Value
+	current.Next = nil
+	l.Size--
+	return value, true
+}
+
+func (l *LinkedList[T]) Dequeue() (T, bool) {
+	if l.Head == nil {
+		var zeroValue T
+		return zeroValue, false
+	}
+
+	value := l.Head.Value
+	l.Head = l.Head.Next
+	l.Size--
+	return value, true
 }

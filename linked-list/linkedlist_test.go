@@ -3,30 +3,21 @@ package linkedlist
 import "testing"
 
 func TestLinkedList(t *testing.T) {
-	list := LinkedList[int]{
-		Equals: func(a, b int) bool { return a == b },
+	list := LinkedList[int]{}
+
+	list.Append(1)
+	list.Append(2)
+	list.Append(3)
+
+	list.Traverse()
+
+	value, ok := list.Pop()
+	if !ok || value != 3 {
+		t.Errorf("pop failed, expect 3, got %v", value)
 	}
 
-	list.Append(42)
-	list.Append(99)
-	list.Append(101)
-
-	t.Run("traverse", func(t *testing.T) {
-		list.Traverse()
-	})
-
-	t.Run("search 42", func(t *testing.T) {
-		found := list.Search(42)
-		if found == nil || found.Value != 42 {
-			t.Errorf("expected to find 42, got %v", found)
-		}
-	})
-
-	t.Run("delete 99", func(t *testing.T) {
-		list.Delete(99)
-		found := list.Search(99)
-		if found != nil {
-			t.Errorf("expected 99 to be deleted, but found %v", found)
-		}
-	})
+	deq, ok := list.Dequeue()
+	if !ok || deq != 1 {
+		t.Errorf("dequeue failed, expected 1, got %v", deq)
+	}
 }
