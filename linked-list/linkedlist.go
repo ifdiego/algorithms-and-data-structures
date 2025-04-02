@@ -3,8 +3,9 @@ package linkedlist
 import "fmt"
 
 type Node[T any] struct {
-	Value T
-	Next  *Node[T]
+	Value    T
+	Next     *Node[T]
+	Previous *Node[T]
 }
 
 type LinkedList[T any] struct {
