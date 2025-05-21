@@ -1,14 +1,8 @@
-CC = clang
-TARGET = a.out
-SRC = single_linked_list.c
-
-all: $(TARGET)
-
-$(TARGET): $(SRC)
-	$(CC) -o $(TARGET) $(SRC)
+all:
+	clang single_linked_list.c
 
 clean:
-	rm -rf $(TARGET)
+	rm -rf a.out
 
-run: $(TARGET)
-	./$(TARGET)
+run: all
+	./a.out
