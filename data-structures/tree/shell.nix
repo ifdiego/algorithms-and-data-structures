@@ -1,5 +1,8 @@
-{ pkgs ? import <nixpkgs> {} }:
-
-pkgs.mkShell {
-  buildInputs = [ pkgs.deno ];
-}
+let
+  pkgs = import <nixpkgs> {};
+in
+  pkgs.mkShell {
+    packages = [
+      pkgs.deno
+    ];
+  }
